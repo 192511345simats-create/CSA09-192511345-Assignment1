@@ -41,8 +41,6 @@ public class DesignChallengeDemo {
             return !time.isBefore(validFrom) && time.isBefore(validFrom.plusDays(1));
         }
     }
-    static final class E-bike {
-    }
     static final class EBike {
         private final PricingRule pricing = new FlatFeeRule(15.0);
         double fee(long minutes, LocalDateTime entry) {
