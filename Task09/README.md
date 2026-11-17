@@ -1,0 +1,5 @@
+Task 9 – Abstraction
+
+`Vehicle` is abstract because it contains shared state and constructor logic while requiring subclasses to provide a rate. `Chargeable` is an interface because charging is an optional capability that unrelated vehicle classes may implement. A class can implement multiple interfaces, supporting multiple capabilities without multiple class inheritance. Interface default methods can provide shared optional behaviour; static interface methods can provide related utility functions.
+
+Changing `Vehicle` to an interface would lose ordinary instance fields and constructors. Changing `Chargeable` to an abstract class would prevent a class already extending another class from extending it too. Dispatch time is effectively O(1) in either design; object state and memory depend on the fields actually stored.
