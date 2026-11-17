@@ -1,0 +1,5 @@
+Task 4 – Classes, Objects and Constructors
+
+Use parameterised constructors to establish valid state immediately. Constructor overloading can provide convenient defaults, while `this(...)` chains constructors to one validation path. A `ParkingTicket` constructor receives its vehicle, slot and entry timestamp. A copy constructor is unnecessary for issuing a new ticket because a duplicate must receive a new unique ID, not copy an existing identity.
+
+Local reference variables are typically held in stack frames; objects and arrays are allocated on the heap. References are passed by value. A default constructor followed by setters permits temporarily invalid objects, while constructors and static factories can validate before returning an instance. Creating n tickets requires O(n) total time and O(n) storage regardless of construction style.
