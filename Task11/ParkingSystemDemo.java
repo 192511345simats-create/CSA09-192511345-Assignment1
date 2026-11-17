@@ -87,8 +87,9 @@ public class ParkingSystemDemo {
                 return false;
             Slot target = floors[floor][slot];
             if (target.isFree()) return false;
+            String registration = target.vehicle.registration();
             target.vehicle = null;
-            active.remove(target.vehicle == null ? "" : target.vehicle.registration());
+            active.remove(registration);
             return true;
         }
     }
